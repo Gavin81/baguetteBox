@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link href=" https://cdn.jsdelivr.net/npm/baguettebox.js@1.12.0/dist/baguetteBox.min.css " rel="stylesheet">
+<link rel="stylesheet" href="<CSS URL>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.8">
+<title>baguetteBox Interactive Gallery</title>
+<link>
+</head>
+<body>
+<header>
+    
+</header>
+
+
+<a href="img/2-1.jpg"
+  data-at-450="img/thumbs/2-1.jpg"
+  data-at-800="img/small/2-1.jpg"
+  data-at-1366="img/medium/2-1.jpg"
+  data-at-1920="img/big/2-1.jpg">
+    <img src="img/thumbs/2-1.jpg">
+</a>
+
+
+<div class="gallery">
+    <a href="img/2-1.jpg" data-caption="Image caption">
+        <img src="img/thumbnails/2-1.jpg" alt="First image">
+    </a>
+    <a href="img/2-2.jpg" title="image">
+        <img src="img/thumbnails/2-2.jpg" alt="Second image">
+    </a>
+    ...
+</div>
+
+<script src=" https://cdn.jsdelivr.net/npm/baguettebox.js@1.12.0/dist/baguetteBox.min.js "></script>
+<script src="<JS URL>" async></script>
+
+<script>
+window.addEventListener('load', function() {
+  baguetteBox.run('.gallery');
+});
+</script>
+
+</body>
+</html>
