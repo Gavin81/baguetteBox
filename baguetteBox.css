@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;    
+}
+
+body {
+    margin: 0;
+    width: 50%;
+}
+
+header {
+    /* border: 1px solid blue; */
+    margin: 0;
+}
+header ul {
+    list-style-type: none;
+}
+input {
+    border: 1px solid brown;
+    margin: auto;
+    width: 100%;
+}
+
+.gallery {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.gallery a {
+    /* border: 2px solid green; */
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.gallery img {
+    border: 1px solid black;
+    width: 100%;
+}
