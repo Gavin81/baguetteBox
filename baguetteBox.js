@@ -8,12 +8,13 @@ search.addEventListener('keyup', e => {
     let currentValue = e.target.value.toLowerCase();
     let caption = document.querySelector('data-caption');
     let title = document.querySelector('title');
+    
     caption.forEach(data-caption => {
         if (caption.textContent.toLowerCase().includes(currentValue)) {
-
+            
         } else {
 
         }
-    })
+    });
     console.log(currentValue);
 });
