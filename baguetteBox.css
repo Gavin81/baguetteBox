@@ -15,7 +15,6 @@ header ul {
     list-style-type: none;
 }
 input {
-    border: 1px solid brown;
     margin: auto;
     width: 100%;
 }
@@ -33,6 +32,5 @@ input {
     width: 100%;
 }
 .gallery img {
-    border: 1px solid black;
     width: 100%;
 }
