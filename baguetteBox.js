@@ -6,15 +6,15 @@ const _0x5837=['none','data-caption','toLowerCase','keyup','keyEvent','getAttrib
 const search = document.getElementById('search');
 search.addEventListener('keyup', e => {
     let currentValue = e.target.value.toLowerCase();
-    let caption = document.querySelector('data-caption');
-    let title = document.querySelector('title');
+    let caption = document.getAttribute('data-caption');
+    //let title = document.querySelector('title');
     
-    // caption.forEach(data-caption => {
-    //     if (caption.textContent.toLowerCase().includes(currentValue)) {
-            
-    //     } else {
+    caption.forEach(caption => {
+        if (caption.textContent.toLowerCase().includes(currentValue)) {
+            caption.style.display = 'block';
+        } else {
 
-    //     }
-    // });
+        }
+    });
     console.log(currentValue);
 });
