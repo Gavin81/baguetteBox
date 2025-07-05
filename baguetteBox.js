@@ -18,3 +18,5 @@ search.addEventListener('keyup', e => {
     });
     console.log(currentValue);
 });
+
+baguetteBox.run('.gallery');
