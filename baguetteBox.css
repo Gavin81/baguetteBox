@@ -31,9 +31,3 @@ input {
     gap: 25px;
 }
 
-[data-caption] {
-    border: 1px solid red;
-}
-title {
-    /* border: 1px solid blue; */
-}
