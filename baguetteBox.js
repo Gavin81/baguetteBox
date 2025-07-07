@@ -6,7 +6,7 @@ search.addEventListener('keyup', e => {
 
     const anchor = document.querySelectorAll('.gallery a');
     let currentValue = e.target.value.toLowerCase();
-    let caption = document.getAttribute('data-caption');
+    //let caption = document.getAttribute('data-caption');
     
     anchor.forEach(caption => {
         
