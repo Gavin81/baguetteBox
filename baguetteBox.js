@@ -4,7 +4,7 @@ const search = document.getElementById('search');
 
 search.addEventListener('keyup', e => {
 
-    const anchor = document.querySelectorAll('.gallery a');
+    //const anchor = document.querySelectorAll('.gallery a');
     let currentValue = e.target.value.toLowerCase();
     //let caption = document.getAttribute('data-caption');
     
@@ -13,7 +13,7 @@ search.addEventListener('keyup', e => {
         const anchor = document.querySelectorAll('.gallery a');
         const caption = anchor.getAttribute('data-caption');
         
-        if (caption.toLowerCase().includes(search)){
+        if (caption.textContent.toLowerCase().includes(currentValue)){
             caption.style.display = 'block';
         } else {
             caption.style.display = 'none';
