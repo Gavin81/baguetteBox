@@ -7,7 +7,7 @@ const search = document.getElementById('search');
 search.addEventListener('keyup', e => {
     let currentValue = e.target.value.toLowerCase();
     let caption = document.getAttribute('data-caption');
-    let title = document.querySelector('title');
+    //let title = document.querySelector('title');
     
     caption.forEach(caption => {
         if (caption.textContent.toLowerCase().includes(currentValue)) {
