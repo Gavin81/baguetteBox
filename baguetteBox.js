@@ -5,18 +5,18 @@ const _0x5837=['none','data-caption','toLowerCase','keyup','keyEvent','getAttrib
 
 const search = document.getElementById('search');
 search.addEventListener('keyup', e => {
-    //let currentValue = e.target.value.toLowerCase();
-    //let caption = document.getAttribute('data-caption');
-    //let title = document.querySelector('title');
+    let currentValue = e.target.value.toLowerCase();
+    let caption = document.getAttribute('data-caption');
+    let title = document.querySelector('title');
     
-    // caption.forEach(caption => {
-    //     if (caption.textContent.toLowerCase().includes(currentValue)) {
-    //         caption.style.display = 'block';
-    //     } else {
-
-    //     }
-    // });
-    // console.log(currentValue);
+    caption.forEach(caption => {
+        if (caption.textContent.toLowerCase().includes(currentValue)) {
+            caption.style.display = 'block';
+        } else {
+            caption.style.display = 'none';
+        }
+    });
+    console.log(currentValue);
 });
 
 baguetteBox.run('.gallery');
