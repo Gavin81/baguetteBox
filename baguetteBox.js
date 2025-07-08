@@ -4,19 +4,18 @@ const search = document.getElementById('search');
 
 search.addEventListener('keyup', e => {
 
-    //const anchor = document.querySelectorAll('.gallery a');
+    const anchor = document.querySelectorAll('.gallery a');
     let currentValue = e.target.value.toLowerCase();
     //let caption = document.getAttribute('data-caption');
     
-    anchor.forEach(caption => {
+    anchor.forEach(anchor => {
         
-        const anchor = document.querySelectorAll('.gallery a');
         const caption = anchor.getAttribute('data-caption');
         
-        if (caption.textContent.toLowerCase().includes(currentValue)){
-            caption.style.display = 'block';
+        if (caption.toLowerCase().includes(currentValue)){
+            anchor.style.display = 'block';
         } else {
-            caption.style.display = 'none';
+            anchor.style.display = 'none';
         }
     });
 
@@ -29,5 +28,3 @@ search.addEventListener('keyup', e => {
     // });
     // console.log(currentValue);
 });
-
-//baguetteBox.run('.gallery');
